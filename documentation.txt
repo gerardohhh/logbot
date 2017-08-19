@@ -1,0 +1,31 @@
+Because we chose to create a mobile app and used Exponent and React Native, the process to compile, configure, and implement our project is vastly different from the manner in which we performed such actions previously in CS50.
+ 
+Set Up
+Note: This “Set Up” puts the user in Developer mode. In order to view the app purely as a user, please see below in the “Public Use” section.
+The code uploaded to CS50 IDE must first be downloaded onto a computer.
+Next, download the Exponent XDE Desktop software onto a computer.
+Create an account in Exponent XDE Desktop.
+Once you are on the home page for this software, click the purple icon at the top left corner, and choose “Open Project.” This will cause a Finder window to pop up. When this happens, find and choose the project folder that you just downloaded.
+Opening the folder in Exponent XDE initiates two server processes: Exponent Development Server and React Native Packager Server.
+Once XDE displays “Packager Ready” in the log pane, the project is ready to be loaded onto a phone.
+Click the gray icon at the top right corner, and type the phone number at which the link for the project will be accessed locally.
+Now, click “Send Link.” Anyone with the Exponent app should be able to receive a text message with an Exponent link. Enter the URL into the Exponent app on a mobile phone, and the project will load.
+ 
+Compilation/Configuration
+Exponent greatly aids the compilation and configuration process of mobile development. When a mobile developer creates a project in Exponent XDE, XDE automatically includes the files necessary for configuration. Opening the folder in XDE automatically compiles and translates the mobile developer’s code in JavaScript via the React Native Packager Server. Then, to communicate between XDE and the Exponent mobile app, the Exponent Development Server use the Exponent Manifest, which is inside the project folder. 
+ 
+Navigation
+When the initial view renders, there should be two tabs, indicated by icons at the bottom of the phone screen: the “LogBot” Home (home icon) and the “Additional Information” (“I” icon) screens. These tab icons allow the user to navigate between two tabs. When a tab icon is tapped, it changes from grey to blue, with blue representing the current view.
+
+
+Updating GPS location
+If a user wishes to log the current location of his item, he can simply visit his homepage and tap on the icon of the item. The GPS location of this item will automatically update and a new item marker will appear on the map.
+ 
+Screens
+The two screens have different purposes: the Home screen serves as the main page and houses a majority of the project’s functionalities, while the “Additional Information” screen provides a description of the app and its creation.
+In the Home screen, the topmost container is a map that displays the most recently recorded locations of items being tracked. The blue dot indicates the current position of the user’s iPhone, while each red marker signifies a distinct item. This can be elucidated by tapping a marker – this functionality displays the name of the item and its last tracked location in the past day.
+Below the map lies a rectangular area for text input, labeled “Add item.” When the user taps on the rectangle, the mobile phone keyboard will render itself, allowing the user to customize the name of an item. Tapping “return” on the keyboard will simultaneously save the item, rendering a new object below, and record the items current location (as determined by the mobile phone’s location), rendering a new marker on the map. Added objects can be deleted by tapping the “x” to the right of the object name.
+The “Additional Information” tab mostly houses text. It includes the app logo, an app description, and details about the app’s creation (names of the creators, date published, and project purpose).
+ 
+Public Use
+While we published our app in the Exponent XDE in order to create a permanent URL at which our project can be accessed, this link must be opened using the Exponent developer app. The first step is to download the Exponent developer app (“Exponent by Nametag”) onto a mobile phone. Now, open the Exponent developer app and paste into the text input container the following link: https://getexponent.com/@gerardo/logbot. After a few seconds, the app should load. 

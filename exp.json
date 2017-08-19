@@ -1,0 +1,21 @@
+{
+  "name": "LogBot",
+  "description": "LogBot is an app meant to help\nyou keep track of your belongings.\nIn LogBot, you can add a list of\nobjects you'd like to keep track of\nand you'll be able to keep a log\nof locations telling you where your\nobjects have been.",
+  "slug": "logbot",
+  "sdkVersion": "11.0.0",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "primaryColor": "#1E68A8",
+  "iconUrl": "https://s27.postimg.org/jqvzg1hrn/logbot_icon.png",
+  "notification": {
+    "iconUrl": "https://s27.postimg.org/jqvzg1hrn/logbot_icon.png",
+    "color": "#000000"
+  },
+  "loading": {
+    "iconUrl": "https://s27.postimg.org/jqvzg1hrn/logbot_icon.png",
+    "hideExponentText": false
+  },
+  "packagerOpts": {
+    "assetExts": ["ttf"]
+  }
+}
